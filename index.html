@@ -428,6 +428,14 @@ footer { padding: 2rem 3vw 3rem; color: var(--muted); font-size: 1.05rem; }
 
   var projects = [
     {
+      name: 'Internship alert bot',
+      kind: 'Automation',
+      desc: 'I built a bot that checks internship listings every hour and posts only new roles to a private Discord channel. A Python script filters listings by keyword, then compares each one against a saved list of roles already sent so there are never repeats. It runs on a GitHub Actions schedule, so it needs no server and works while my computer is off. The webhook URL is stored as an encrypted repository secret, never in the code.',
+      tags: ['Python', 'GitHub Actions', 'Discord webhooks', 'YAML', 'Secrets management', 'Cron scheduling'],
+      link: 'https://github.com/ayaanhirsi/internship-bot',
+      svg: '<svg ' + S + '><rect x="28" y="70" width="70" height="26"/><rect x="28" y="137" width="70" height="26"/><rect x="28" y="204" width="70" height="26"/><line x1="98" y1="83" x2="168" y2="150"/><line x1="98" y1="150" x2="168" y2="150"/><line x1="98" y1="217" x2="168" y2="150"/><circle cx="200" cy="150" r="32"/><line x1="200" y1="150" x2="200" y2="130"/><line x1="200" y1="150" x2="215" y2="159"/><line x1="232" y1="150" x2="290" y2="150"/><polyline points="282,143 290,150 282,157"/><rect x="290" y="108" width="86" height="84" rx="3" fill="var(--panel)"/><circle cx="310" cy="132" r="5" fill="currentColor"/><line x1="324" y1="132" x2="362" y2="132"/><circle cx="310" cy="156" r="5" fill="currentColor"/><line x1="324" y1="156" x2="354" y2="156"/><circle cx="310" cy="180" r="5"/><line x1="324" y1="180" x2="346" y2="180" stroke-dasharray="4 4"/></svg>'
+    },
+    {
       name: 'ML-powered intrusion detection system',
       kind: 'Machine learning',
       desc: 'I trained machine learning models to read network traffic and flag malicious activity. Then I wrapped them in a FastAPI service that makes real-time and batch predictions, pulls in threat intelligence to enrich every result, and sends Discord alerts with the attack type, IP reputation score and location.',
